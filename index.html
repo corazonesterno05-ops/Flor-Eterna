@@ -7,69 +7,80 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Portada -->
+    <!-- PORTADA -->
     <header class="hero">
         <img src="portada.jpg" alt="Flores Eternas" class="hero-img">
-        <h1 class="hero-title">🌸 Flores Eternas Bogotá 🌸</h1>
-        <p class="hero-subtitle">Arreglos únicos para cada ocasión • Envíos en toda Bogotá</p>
+        <div class="hero-text">
+            <h1>🌸 Flores Eternas Bogotá 🌸</h1>
+            <p>Arreglos únicos para cada ocasión • Envíos en toda Bogotá</p>
+            <a href="#about" class="btn">Conócenos</a>
+            <a href="#contacto" class="btn">Contáctanos</a>
+        </div>
     </header>
 
-    <!-- Misión y Visión -->
-    <section class="about">
+    <!-- MISIÓN Y VISIÓN -->
+    <section id="about" class="about">
         <h2>🌟 Nuestra Misión</h2>
         <p>
-            Nuestra misión es llevar belleza y emociones duraderas a cada hogar y evento en Bogotá,
-            ofreciendo arreglos florales de alta calidad que no se marchitan, con atención personalizada
-            y un servicio confiable de entrega a domicilio.
+            Llevar belleza y emociones duraderas a cada hogar y evento en Bogotá,
+            ofreciendo arreglos florales de alta calidad que no se marchitan,
+            con atención personalizada y un servicio confiable de entrega a domicilio.
         </p>
         
         <h2>👁️ Nuestra Visión</h2>
         <p>
-            Ser la tienda líder en la venta de flores eternas en Colombia, reconocida por la
-            creatividad de nuestros diseños, la calidad de nuestros productos y la confianza que
-            generamos en cada cliente, creando experiencias que perduren en el tiempo.
+            Ser la tienda líder en la venta de flores eternas en Colombia,
+            reconocida por la creatividad de nuestros diseños, la calidad de nuestros productos
+            y la confianza que generamos en cada cliente.
         </p>
     </section>
 
-    <!-- Productos -->
+    <!-- PRODUCTOS -->
     <section id="productos" class="productos">
         <h2>🌷 Nuestros Productos</h2>
         <div class="producto-grid">
-            <div class="producto">
+            <div class="producto-card">
                 <img src="Imagen de WhatsApp 2025-07-11 a las 08.52.15_03aa5826.jpg" alt="Caja de Rosas">
                 <h3>Caja de Rosas</h3>
-                <p>Elegante caja con rosas preservadas. <strong>$120.000</strong></p>
+                <p class="precio">$120.000</p>
             </div>
-            <div class="producto">
+            <div class="producto-card">
                 <img src="Imagen de WhatsApp 2025-07-11 a las 08.52.15_1b02196b.jpg" alt="Bouquet Clásico">
                 <h3>Bouquet Clásico</h3>
-                <p>Perfecto para regalar en cumpleaños o aniversarios. <strong>$95.000</strong></p>
+                <p class="precio">$95.000</p>
             </div>
-            <div class="producto">
+            <div class="producto-card">
                 <img src="Imagen de WhatsApp 2025-07-11 a las 08.52.16_29505971.jpg" alt="Arreglo de Mesa">
                 <h3>Arreglo de Mesa</h3>
-                <p>Ideal para decoración de sala o comedor. <strong>$150.000</strong></p>
+                <p class="precio">$150.000</p>
+            </div>
+            <div class="producto-card">
+                <img src="Imagen de WhatsApp 2025-07-11 a las 08.52.16_f56d521f.jpg" alt="Caja Corazón">
+                <h3>Caja Corazón</h3>
+                <p class="precio">$130.000</p>
             </div>
         </div>
     </section>
 
-    <!-- Contacto y Carrito -->
+    <!-- CONTACTO Y MEDIOS DE PAGO -->
     <section id="contacto" class="contacto">
         <h2>📞 Contáctanos</h2>
-        <p>Rellena el formulario y te responderemos pronto.</p>
         <form action="mailto:corazonesterno05@gmail.com" method="POST" enctype="text/plain">
             <input type="text" name="nombre" placeholder="Tu nombre" required>
             <input type="email" name="correo" placeholder="Tu correo" required>
-            <textarea name="mensaje" placeholder="Tu mensaje o pedido"></textarea>
+            <textarea name="mensaje" placeholder="Escribe tu pedido o consulta"></textarea>
             <button type="submit">Enviar</button>
         </form>
 
-        <div class="medios-pago">
-            <h3>💳 Medios de Pago</h3>
-            <img src="icono-nequi.png" alt="Nequi" class="icono">
-            <img src="icono-daviplata.png" alt="Daviplata" class="icono">
-            <img src="icono-visa.png" alt="Visa" class="icono">
-            <img src="icono-mastercard.png" alt="Mastercard" class="icono">
+        <div class="carrito">
+            <h3>🛒 Medios de Pago</h3>
+            <div class="pagos">
+                <img src="icono-nequi.png" alt="Nequi">
+                <img src="icono-daviplata.png" alt="Daviplata">
+                <img src="icono-visa.png" alt="Visa">
+                <img src="icono-mastercard.png" alt="Mastercard">
+            </div>
+            <p>Puedes pagar contra entrega o por transferencia a Nequi / Daviplata</p>
         </div>
 
         <div class="whatsapp">
@@ -85,4 +96,5 @@
     </footer>
 </body>
 </html>
+
 
