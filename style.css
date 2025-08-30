@@ -39,7 +39,7 @@ nav a:hover {
 
 .hero {
     background: url('portada.png') center/cover no-repeat;
-    height: 30vh;
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
