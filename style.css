@@ -38,8 +38,8 @@ nav a:hover {
 }
 
 .hero {
-    background: url('portada.jpg') center/cover no-repeat;
-    height: 70vh;
+    background: url('portada.png') center/cover no-repeat;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
