@@ -7,44 +7,98 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Flores Eternas Bogotá</h1>
+    <!-- PORTADA -->
+    <header class="portada">
+        <img src="img/portada.jpg" alt="Flores Eternas" class="portada-img">
+        <div class="portada-texto">
+            <h1>Flores Eternas Bogotá</h1>
+            <p>Arreglos únicos que duran para siempre</p>
+            <a href="#productos" class="btn">Ver Productos</a>
+            <a href="#sobre-nosotros" class="btn btn-sec">Sobre Nosotros</a>
+        </div>
     </header>
 
-    <!-- Portada principal -->
-    <section class="portada">
-        <img src="img/portada.jpg" alt="Portada de la tienda">
-        <div class="portada-texto">
-            <h2>Flores que duran para siempre</h2>
-            <p>Regalos únicos y elegantes en Bogotá</p>
-        </div>
-    </section>
-
-    <!-- Productos -->
-    <section class="productos">
+    <!-- PRODUCTOS -->
+    <section id="productos" class="productos">
         <h2>Nuestros Productos</h2>
-        <div class="galeria">
-            <img src="img1.jpg" alt="Producto 1">
-            <img src="img/Imagen de WhatsApp 2025-07-11 a las 08.52.15_1b02196b.jpg" alt="Producto 2">
-            <img src="img/Imagen de WhatsApp 2025-07-11 a las 08.52.15_03aa5826.jpg" alt="Producto 3">
-            <img src="img/Imagen de WhatsApp 2025-07-11 a las 08.52.15_ed1b7453.jpg" alt="Producto 4">
-            <img src="img/Imagen de WhatsApp 2025-07-11 a las 08.52.16_1978b420.jpg" alt="Producto 5">
-            <img src="img/Imagen de WhatsApp 2025-07-11 a las 08.52.16_29505971.jpg" alt="Producto 6">
-            <img src="img/Imagen de WhatsApp 2025-07-11 a las 08.52.16_65e3089f.jpg" alt="Producto 7">
-            <img src="img/Imagen de WhatsApp 2025-07-11 a las 08.52.16_f56d521f.jpg" alt="Producto 8">
-            <img src="img/Imagen de WhatsApp 2025-07-11 a las 08.52.17_5dd2e3ef.jpg" alt="Producto 9">
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="img/producto1.jpg" alt="Caja Rosas">
+                <h3>Caja Rosas Rojas</h3>
+                <p class="precio">$80.000</p>
+                <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                <button class="agregar-carrito" data-nombre="Caja Rosas Rojas" data-precio="80000">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/producto2.jpg" alt="Ramo Pequeño">
+                <h3>Ramo Pequeño</h3>
+                <p class="precio">$60.000</p>
+                <p class="estrellas">⭐⭐⭐⭐</p>
+                <button class="agregar-carrito" data-nombre="Ramo Pequeño" data-precio="60000">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/producto3.jpg" alt="Ramo Grande">
+                <h3>Ramo Grande</h3>
+                <p class="precio">$120.000</p>
+                <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                <button class="agregar-carrito" data-nombre="Ramo Grande" data-precio="120000">Agregar al carrito</button>
+            </div>
         </div>
     </section>
 
-    <!-- Reseñas -->
-    <section class="resenas">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <blockquote>"Hermosas flores, perfectas para cualquier ocasión."</blockquote>
-        <blockquote>"Excelente servicio y entrega rápida en Bogotá."</blockquote>
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>En Flores Eternas Bogotá nos dedicamos a crear arreglos florales que duran para siempre, llevando alegría y belleza a tus espacios.</p>
+        <h3>Misión</h3>
+        <p>Brindar experiencias únicas con flores preservadas de alta calidad.</p>
+        <h3>Visión</h3>
+        <p>Ser la tienda de referencia en Bogotá para flores eternas y regalos exclusivos.</p>
     </section>
 
-    <footer>
-        <p>© 2025 Flores Eternas Bogotá - Todos los derechos reservados</p>
-    </footer>
+    <!-- CARRITO LATERAL -->
+    <div id="carrito" class="carrito">
+        <h2>🛒 Tu Pedido</h2>
+        <ul id="carrito-items"></ul>
+        <p id="total">Total: $0</p>
+        <h4>Métodos de Pago</h4>
+        <div class="pagos">
+            <img src="img/nequi.png" alt="Nequi">
+            <img src="img/daviplata.png" alt="Daviplata">
+            <img src="img/tarjetas.png" alt="Tarjetas">
+        </div>
+        <form id="pedido-form">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="text" name="telefono" placeholder="Teléfono" required>
+            <input type="text" name="direccion" placeholder="Dirección" required>
+            <select name="pago" required>
+                <option value="">Método de pago</option>
+                <option value="Contraentrega">Contraentrega</option>
+                <option value="Nequi">Nequi</option>
+                <option value="Daviplata">Daviplata</option>
+                <option value="Tarjeta">Tarjeta</option>
+            </select>
+            <button type="submit" class="btn">Confirmar Pedido</button>
+        </form>
+    </div>
+
+    <!-- ICONO DE WHATSAPP -->
+    <a href="https://wa.me/573213290999?text=Hola,%20estoy%20interesado%20en%20sus%20flores%20eternas" target="_blank" class="whatsapp">
+        <img src="img/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form action="mailto:corazonesterno05@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo" required>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
