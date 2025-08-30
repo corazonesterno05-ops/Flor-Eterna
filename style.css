@@ -48,15 +48,14 @@ nav a:hover {
     background-attachment: fixed;
  }   
 
-.hero::before {
-    /*crea una capa oscura para que el texto resalte */
+.hero::before { /*crea una capa oscura para que el texto resalte */
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.30);/* ajusta opacidad */
+    background: rgba(0,0,0,0.50);/* ajusta opacidad */
     pointer-events: none;
 }
 
