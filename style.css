@@ -15,7 +15,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    
 }
 .logo img {
     height: 250px;
@@ -39,7 +38,7 @@ nav a:hover {
 
 .hero {
     background: url('portada.png') center/cover no-repeat;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +58,6 @@ nav a:hover {
     pointer-events: none;
     position: relative;
 }
-
 .hero-text {
     position: relative; /*asegura que esté sobre la capa oscura */
     z-index: 1;
