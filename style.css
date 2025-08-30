@@ -1,106 +1,146 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: #fff;
     color: #333;
 }
 
-/* PORTADA */
-.portada {
-    position: relative;
-    text-align: center;
-}
-.portada-img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    filter: brightness(0.6);
-}
-.portada-texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-.btn {
-    background: #e63946;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-.btn-sec {
-    background: #457b9d;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-/* PRODUCTOS */
-.productos {
-    text-align: center;
-    padding: 40px 10px;
+.logo img {
+    height: 50px;
+    margin-right: 10px;
 }
-.productos-grid {
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #ff3366;
+}
+
+.hero {
+    background: url('img/portada.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+}
+.hero-text h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+.hero-text p {
+    font-size: 1.2rem;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff3366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.vision-mision, .productos, .carrito, .contacto {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 1000px;
-    margin: auto;
 }
-.producto {
-    background: #f8f8f8;
-    padding: 15px;
+.card {
+    border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.producto img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* CARRITO */
-.carrito {
-    position: fixed;
-    right: -100%;
-    top: 0;
-    width: 300px;
-    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     background: white;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
-    padding: 20px;
-    transition: 0.3s ease;
-    z-index: 999;
+    transition: transform 0.2s ease;
 }
-.carrito.abierto {
-    right: 0;
+.card:hover {
+    transform: translateY(-5px);
 }
-.pagos img {
-    width: 60px;
-    margin: 5px;
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
-/* WHATSAPP */
-.whatsapp {
+.metodos-pago img {
+    height: 40px;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #ff3366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background: #e62e5c;
+}
+
+footer {
+    background: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+.redes a {
+    margin: 0 8px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.whatsapp-float {
     position: fixed;
     bottom: 20px;
     right: 20px;
-}
-.whatsapp img {
-    width: 60px;
-}
-
-/* FORMULARIOS */
-input, textarea, select {
-    width: 90%;
-    margin: 10px 0;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-button {
-    background: #e63946;
+    background: #25D366;
     color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
+    font-size: 2rem;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.whatsapp-float:hover {
+    background: #1ebe5d;
 }
