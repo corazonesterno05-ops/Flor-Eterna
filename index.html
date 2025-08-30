@@ -1,93 +1,129 @@
+Modelos 
+1
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flor Eterna</title>
+    <title>Flores Eternas</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!-- HEADER -->
-    <header>
+    <!-- Barra superior con logo y navegación -->
+    <header class="top-bar">
         <div class="logo">
-            <img src="logo.png" alt="Logo Flores Eternas">
-            <h1>Flores Eternas</h1>
+            <img src="img/logo.png" alt="Logo Flores Eternas">
         </div>
         <nav>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="#productos">Productos</a>
-            <a href="#carrito">Carrito</a>
-            <a href="contacto.html">Contáctanos</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- HERO (PORTADA) -->
+    <!-- Portada -->
     <section class="hero">
-        <img src="portada.png" alt="Flores Eternas" class="hero-image">
+        <img src="img/portada.jpg" alt="Flores Eternas" class="portada">
         <div class="hero-text">
-            <h2>Flores que duran para siempre</h2>
-            <p>Regalos que transforman emociones en recuerdos eternos</p>
-            <a href="#productos" class="btn">Ver Productos</a>
-        </div>
-    </section>
-
-    <!-- PRODUCTOS -->
-    <section id="productos" class="productos">
-        <h2>Nuestros Productos</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="producto1.jpg" alt="Caja de Rosas">
-                <h3>Caja de Rosas</h3>
-                <p>$120.000</p>
-            </div>
-            <div class="card">
-                <img src="producto2.jpg" alt="Ramo Premium">
-                <h3>Ramo Premium</h3>
-                <p>$150.000</p>
-            </div>
-            <div class="card">
-                <img src="producto3.jpg" alt="Arreglo Corazón">
-                <h3>Arreglo Corazón</h3>
-                <p>$180.000</p>
+            <h1>🌸 Bienvenidos a Flores Eternas 🌸</h1>
+            <p>Regala amor que nunca se marchita</p>
+            <div class="hero-buttons">
+                <a href="nosotros.html" class="btn">Conócenos</a>
+                <a href="contacto.html" class="btn">Contáctanos</a>
             </div>
         </div>
     </section>
 
-    <!-- CARRITO Y MEDIOS DE PAGO -->
-    <section id="carrito" class="carrito">
-        <h2>Carrito y Métodos de Pago</h2>
-        <p>Completa tus datos y te confirmaremos el pedido. Pagos contraentrega o usando:</p>
-        <div class="metodos-pago">
-            <img src="nequi.png" alt="Nequi">
-            <img src="daviplata.png" alt="Daviplata">
-            <img src="mastercard.png" alt="Mastercard">
-            <img src="visa.png" alt="Visa">
-        </div>
-        <form>
-            <input type="text" placeholder="Nombre completo" required>
-            <input type="text" placeholder="Dirección de entrega" required>
-            <input type="tel" placeholder="Teléfono de contacto" required>
-            <textarea placeholder="Detalles del pedido"></textarea>
-            <button type="submit">Enviar Pedido</button>
-        </form>
+    <!-- Misión y visión breve -->
+    <section class="about">
+        <h2>Nuestra Esencia</h2>
+        <p>
+            Creamos arreglos con flores preservadas que duran años, para que tus momentos especiales vivan por siempre.
+        </p>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Productos -->
+    <section class="productos" id="productos">
+        <h2>🌹 Nuestros Productos 🌹</h2>
+        <div class="grid-productos">
+            <div class="producto-card">
+                <img src="img/Imagen1.jpg" alt="Rosa Eterna en Caja Transparente">
+                <h3>Rosa Eterna en Caja Transparente</h3>
+                <p>$45.000 COP</p>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="producto-card">
+                <img src="img/Imagen2.jpg" alt="Arreglo Corazón de Rosas">
+                <h3>Arreglo Corazón de Rosas</h3>
+                <p>$95.000 COP</p>
+                <span class="stars">⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="producto-card">
+                <img src="img/Imagen3.jpg" alt="Bouquet Mixto de Flores Eternas">
+                <h3>Bouquet Mixto de Flores Eternas</h3>
+                <p>$120.000 COP</p>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="producto-card">
+                <img src="img/Imagen4.jpg" alt="Caja Premium con Rosa y Chocolates">
+                <h3>Caja Premium con Rosa y Chocolates</h3>
+                <p>$150.000 COP</p>
+                <span class="stars">⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="producto-card">
+                <img src="img/Imagen5.jpg" alt="Mini Caja con Rosa Individual">
+                <h3>Mini Caja con Rosa Individual</h3>
+                <p>$35.000 COP</p>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="producto-card">
+                <img src="img/Imagen6.jpg" alt="Bouquet de Rosas Azules">
+                <h3>Bouquet de Rosas Azules</h3>
+                <p>$110.000 COP</p>
+                <span class="stars">⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="producto-card">
+                <img src="img/Imagen7.jpg" alt="Caja Pequeña con Rosa Eterna">
+                <h3>Caja Pequeña con Rosa Eterna</h3>
+                <p>$40.000 COP</p>
+                <span class="stars">⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="producto-card">
+                <img src="img/Imagen8.jpg" alt="Caja con Tres Rosas Eternas">
+                <h3>Caja con Tres Rosas Eternas</h3>
+                <p>$85.000 COP</p>
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="producto-card">
+                <img src="img/Imagen9.jpg" alt="Caja Especial con Rosa y Peluche">
+                <h3>Caja Especial con Rosa y Peluche</h3>
+                <p>$135.000 COP</p>
+                <span class="stars">⭐⭐⭐⭐</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer con redes sociales -->
     <footer>
-        <p>© 2025 Flores Eternas. Todos los derechos reservados.</p>
+        <p>© 2025 Flores Eternas | Hecho con 💖 en Bogotá</p>
         <div class="redes">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/573213290999" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
         </div>
     </footer>
-
-    <!-- WHATSAPP FLOAT -->
-    <a href="https://wa.me/573213290999" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
 </body>
 </html>
+
+
