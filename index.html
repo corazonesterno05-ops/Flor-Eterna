@@ -5,124 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flores Eternas</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Barra superior con logo y navegación -->
-    <header class="top-bar">
+
+    <!-- HEADER -->
+    <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo Flores Eternas">
+            <img src="img/logo.png" alt="Logo Flores Eternas">
+            <h1>Flores Eternas</h1>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+            <a href="#vision-mision">Nosotros</a>
+            <a href="#productos">Productos</a>
+            <a href="#carrito">Carrito</a>
+            <a href="#contacto">Contáctanos</a>
         </nav>
     </header>
 
-    <!-- Portada -->
+    <!-- HERO -->
     <section class="hero">
-        <img src="portada.jpg" alt="Flores Eternas" class="portada">
         <div class="hero-text">
-            <h1>🌸 Bienvenidos a Flores Eternas 🌸</h1>
-            <p>Regala amor que nunca se marchita</p>
-            <div class="hero-buttons">
-                <a href="nosotros.html" class="btn">Conócenos</a>
-                <a href="contacto.html" class="btn">Contáctanos</a>
-            </div>
+            <h2>Flores que duran para siempre</h2>
+            <p>Regalos que transforman emociones en recuerdos eternos</p>
+            <a href="#productos" class="btn">Ver Productos</a>
         </div>
     </section>
 
-    <!-- Misión y visión breve -->
-    <section class="about">
-        <h2>Nuestra Esencia</h2>
+    <!-- VISIÓN Y MISIÓN -->
+    <section id="vision-mision" class="vision-mision">
+        <h2>🌟 Misión</h2>
         <p>
-            Creamos arreglos con flores preservadas que duran años, para que tus momentos especiales vivan por siempre.
+            Ofrecer experiencias memorables a través de flores eternas y detalles únicos, elaborados con materiales de la más alta calidad, 
+            que transmitan amor, gratitud y belleza en cada ocasión.
+            Nos comprometemos a brindar un servicio confiable, personalizado y oportuno, 
+            convirtiendo cada entrega en un gesto que perdura en el tiempo.
+        </p>
+        <h2>🚀 Visión</h2>
+        <p>
+            Ser la marca líder en Colombia en la creación y distribución de flores eternas y regalos personalizados, 
+            reconocida por su innovación, excelencia y capacidad de transformar emociones en detalles que trascienden.
+            En 5 años, buscamos posicionarnos como referente nacional de calidad y creatividad, 
+            expandiendo nuestra presencia en los principales mercados digitales y físicos del país.
         </p>
     </section>
 
-    <!-- Productos -->
-    <section class="productos" id="productos">
-        <h2>🌹 Nuestros Productos 🌹</h2>
-        <div class="grid-productos">
-            <div class="producto-card">
-                <img src="producto1.jpg" alt="Rosa Eterna en Caja Transparente">
-                <h3>Rosa Eterna en Caja Transparente</h3>
-                <p>$45.000 COP</p>
-                <span class="stars">⭐⭐⭐⭐⭐</span>
+    <!-- PRODUCTOS -->
+    <section id="productos" class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="img/producto1.jpg" alt="Caja de Rosas">
+                <h3>Caja de Rosas</h3>
+                <p>$120.000</p>
             </div>
-
-            <div class="producto-card">
-                <img src="producto2.jpg" alt="Arreglo Corazón de Rosas">
-                <h3>Arreglo Corazón de Rosas</h3>
-                <p>$95.000 COP</p>
-                <span class="stars">⭐⭐⭐⭐</span>
+            <div class="card">
+                <img src="img/producto2.jpg" alt="Ramo Premium">
+                <h3>Ramo Premium</h3>
+                <p>$150.000</p>
             </div>
-
-            <div class="producto-card">
-                <img src="productoo3.jpg" alt="Bouquet Mixto de Flores Eternas">
-                <h3>Bouquet Mixto de Flores Eternas</h3>
-                <p>$120.000 COP</p>
-                <span class="stars">⭐⭐⭐⭐⭐</span>
-            </div>
-
-            <div class="producto-card">
-                <img src="producto4.jpg" alt="Caja Premium con Rosa y Chocolates">
-                <h3>Caja Premium con Rosa y Chocolates</h3>
-                <p>$150.000 COP</p>
-                <span class="stars">⭐⭐⭐⭐</span>
-            </div>
-
-            <div class="producto-card">
-                <img src="producto5.jpg" alt="Mini Caja con Rosa Individual">
-                <h3>Mini Caja con Rosa Individual</h3>
-                <p>$35.000 COP</p>
-                <span class="stars">⭐⭐⭐⭐⭐</span>
-            </div>
-
-            <div class="producto-card">
-                <img src="producto6.jpg" alt="Bouquet de Rosas Azules">
-                <h3>Bouquet de Rosas Azules</h3>
-                <p>$110.000 COP</p>
-                <span class="stars">⭐⭐⭐⭐</span>
-            </div>
-
-            <div class="producto-card">
-                <img src="producto7.jpg" alt="Caja Pequeña con Rosa Eterna">
-                <h3>Caja Pequeña con Rosa Eterna</h3>
-                <p>$40.000 COP</p>
-                <span class="stars">⭐⭐⭐⭐</span>
-            </div>
-
-            <div class="producto-card">
-                <img src="producto8.jpg" alt="Caja con Tres Rosas Eternas">
-                <h3>Caja con Tres Rosas Eternas</h3>
-                <p>$85.000 COP</p>
-                <span class="stars">⭐⭐⭐⭐⭐</span>
-            </div>
-
-            <div class="producto-card">
-                <img src="producto9.jpg" alt="Caja Especial con Rosa y Peluche">
-                <h3>Caja Especial con Rosa y Peluche</h3>
-                <p>$135.000 COP</p>
-                <span class="stars">⭐⭐⭐⭐</span>
+            <div class="card">
+                <img src="img/producto3.jpg" alt="Arreglo Corazón">
+                <h3>Arreglo Corazón</h3>
+                <p>$180.000</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer con redes sociales -->
+    <!-- CARRITO Y MEDIOS DE PAGO -->
+    <section id="carrito" class="carrito">
+        <h2>Carrito y Métodos de Pago</h2>
+        <p>Completa tus datos y te confirmaremos el pedido. Pagos contraentrega o usando:</p>
+        <div class="metodos-pago">
+            <img src="img/nequi.png" alt="Nequi">
+            <img src="img/daviplata.png" alt="Daviplata">
+            <img src="img/mastercard.png" alt="Mastercard">
+            <img src="img/visa.png" alt="Visa">
+        </div>
+        <form>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="text" placeholder="Dirección de entrega" required>
+            <input type="tel" placeholder="Teléfono de contacto" required>
+            <textarea placeholder="Detalles del pedido"></textarea>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <p>Correo: <a href="mailto:corazonesterno05@gmail.com">corazonesterno05@gmail.com</a></p>
+        <p>Teléfono: 321 329 0999</p>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2025 Flores Eternas | Hecho con 💖 en Bogotá</p>
+        <p>© 2025 Flores Eternas. Todos los derechos reservados.</p>
         <div class="redes">
-            <a href="https://wa.me/573213290999" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
         </div>
     </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/573213290999" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
 </body>
 </html>
-
-
-
