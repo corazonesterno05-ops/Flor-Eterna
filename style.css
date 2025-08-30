@@ -57,6 +57,7 @@ nav a:hover {
     bottom: 0;
     background: rgba(0,0,0,0.25);/* ajusta opacidad */
     pointer-events: none;
+    position: relative;
 }
 
 .hero-text {
