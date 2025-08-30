@@ -38,7 +38,7 @@ nav a:hover {
 }
 
 .hero {
-    background: url('img/portada.jpg') center/cover no-repeat;
+    background: url('portada.jpg') center/cover no-repeat;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -46,11 +46,6 @@ nav a:hover {
     text-align: center;
     color: white;
     background-attachment: fixed;
-}
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
 }   
 .hero-text h2 {
     font-size: 3rem;
